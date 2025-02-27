@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function page() {
   return (
-    <h1>Welcomes Homes</h1>
+    <h1>First blog page</h1>
   )
 }
