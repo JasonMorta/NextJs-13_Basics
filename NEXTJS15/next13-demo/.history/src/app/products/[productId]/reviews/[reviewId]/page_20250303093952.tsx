@@ -22,7 +22,7 @@ export default async function ProductReview({
 
   if (parseInt(productId) > 50) {
      notFound()
-     //redirect('/products')
+     redirect('/products')
   }
   
   // Return JSX that renders an <h1> tag displaying both the reviewId and productId

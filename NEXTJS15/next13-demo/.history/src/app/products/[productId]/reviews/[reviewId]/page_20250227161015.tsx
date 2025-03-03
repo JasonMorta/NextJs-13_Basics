@@ -1,6 +1,6 @@
 // Import React, which is needed for creating the component
 import React from 'react'
-import { notFound, redirect } from 'next/navigation'
+import { notFound } from 'next/navigation'
 
 // Define the ProductReview component as an async function
 // This function accepts a prop 'params', which is a Promise that resolves to an object
@@ -21,8 +21,7 @@ export default async function ProductReview({
   const { productId, reviewId } = await params
 
   if (parseInt(productId) > 50) {
-     notFound()
-     //redirect('/products')
+    return notFound()
   }
   
   // Return JSX that renders an <h1> tag displaying both the reviewId and productId

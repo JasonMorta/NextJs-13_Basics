@@ -7,8 +7,7 @@ export default function page() {
       <h1>Welcomes Homes</h1>
       <Link href="/blog">Blog Page</Link><br />
       <Link href="/products">Product Page</Link><br />
-      <Link href="/register">Register</Link><br />
-      <Link href="/order-product">Order Product</Link>
+      <Link href="/register">Register</Link>
       <br />
       <br />
 

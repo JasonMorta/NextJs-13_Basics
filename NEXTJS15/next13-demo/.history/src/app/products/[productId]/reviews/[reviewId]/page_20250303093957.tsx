@@ -21,8 +21,8 @@ export default async function ProductReview({
   const { productId, reviewId } = await params
 
   if (parseInt(productId) > 50) {
-     notFound()
-     //redirect('/products')
+     //notFound()
+     redirect('/products')
   }
   
   // Return JSX that renders an <h1> tag displaying both the reviewId and productId
