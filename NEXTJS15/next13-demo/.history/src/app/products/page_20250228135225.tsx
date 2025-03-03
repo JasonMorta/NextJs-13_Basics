@@ -12,7 +12,11 @@ export default function Products() {
 
   */
 
-
+   const navLinks = [
+    {href: `register`, name: `Register`},
+    {href: `/login`, name: `Login`},
+    {href: `/forgot-password`, name: `Forgot Password`}
+   ]
 
   return (
     <>
@@ -24,7 +28,14 @@ export default function Products() {
       <li>Product 3</li>
     </ul>
 
- 
+    <h2>Navigation Links</h2>
+    <ul>
+      {navLinks.map((link, index) => (
+        <li key={index}>
+          <Link href={link.href}>{link.name}</Link>
+        </li>
+      ))}
+    </ul>
     </>
   )
 }

@@ -1,6 +1,5 @@
 // Import the Metadata type from Next.js, which is used to define page metadata.
 import { Metadata } from "next";
-import Link from "next/link";
 
 // Define a TypeScript type for the props expected by the component and metadata generator.
 type Props = {
@@ -9,9 +8,7 @@ type Props = {
 };
 
 // Async function to generate metadata dynamically for a page.
-export const generateMetadata = async ({
-  params,
-}: Props): Promise<Metadata> => {
+export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
   // Await the resolution of 'params' to extract 'productId'.
   const id = (await params).productId;
 
@@ -24,7 +21,7 @@ export const generateMetadata = async ({
 
   // Return an object containing the page title dynamically set based on 'productId'.
   return {
-    title: `Product ${title}`,
+    title: `Product ${title}`
   };
 };
 
@@ -35,9 +32,6 @@ export default async function ProductDetails({ params }: Props) {
 
   // Return an H1 element displaying the product details.
   return (
-    <section>
-      <h1>Details about product iPhone: {productId}</h1>
-      <Link href="/">Home</Link>
-    </section>
+    <h1>Details about product iPhone: {productId}</h1>
   );
 }

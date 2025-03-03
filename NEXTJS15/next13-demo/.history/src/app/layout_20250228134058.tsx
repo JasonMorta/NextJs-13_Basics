@@ -12,7 +12,7 @@ export default function AuthLayout({children,}: {children: React.ReactNode}) {
         </header>
 
         <main style={{
-          minHeight: 'calc(80vh - 6rem)',
+          minHeight: 'calc(100vh - 6rem)',
         }}>{children}</main>
         
         <footer style={{ backgroundColor: '#333', color: '#fff', padding: '1rem', textAlign: 'center', marginTop: 'auto' }}>

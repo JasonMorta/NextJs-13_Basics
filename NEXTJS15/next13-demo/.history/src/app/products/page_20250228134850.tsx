@@ -12,8 +12,6 @@ export default function Products() {
 
   */
 
-
-
   return (
     <>
     <h1>Products page</h1>
@@ -23,8 +21,6 @@ export default function Products() {
       <li><Link href={`/products/2`}>Product 2</Link></li>
       <li>Product 3</li>
     </ul>
-
- 
     </>
   )
 }

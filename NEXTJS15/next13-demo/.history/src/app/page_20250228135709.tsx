@@ -6,7 +6,7 @@ export default function page() {
     <section>
       <h1>Welcomes Homes</h1>
       <Link href="/blog">Blog Page</Link><br />
-      <Link href="/products">Product Page</Link><br />
+      <Link href="/products">Product Page</Link>
       <Link href="/register">Register</Link>
     </section>
   )
