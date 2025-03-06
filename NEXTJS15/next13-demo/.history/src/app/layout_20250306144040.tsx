@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
+
 
 
 export default function AuthLayout({ children }: { children: React.ReactNode }) {
